@@ -7,6 +7,14 @@
         justify-content: space-around;
         list-style: none;
         margin-top: 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
         
         &__item {
             padding: 60px 44px 44px;
@@ -21,6 +29,11 @@
 
             img {
                 height: 83px;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             strong {
